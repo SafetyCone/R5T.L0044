@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup Label="Main">
+    <TargetFramework>net6.0</TargetFramework>
+    <OutputType>Library</OutputType>
+  </PropertyGroup>
+  <PropertyGroup Label="Package">
+    <Version>1.0.0</Version>
+    <Authors>DCoats</Authors>
+    <Company>Rivet</Company>
+    <Copyright>Copyright © Rivet 2023</Copyright>
+    <Description>Project name operations functionaliy.</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\R5T.L0035\source\R5T.L0035\R5T.L0035.csproj" />
+    <ProjectReference Include="..\R5T.L0044.X000\R5T.L0044.X000.csproj" />
+    <ProjectReference Include="..\..\..\R5T.L0043\source\R5T.L0043.O001\R5T.L0043.O001.csproj" />
+    <ProjectReference Include="..\..\..\R5T.L0043\source\R5T.L0043.O002\R5T.L0043.O002.csproj" />
+  </ItemGroup>
+</Project>
