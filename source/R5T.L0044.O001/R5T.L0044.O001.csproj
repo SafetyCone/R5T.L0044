@@ -13,9 +13,9 @@
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
   </PropertyGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\R5T.L0035\source\R5T.L0035\R5T.L0035.csproj" />
     <ProjectReference Include="..\R5T.L0044.X000\R5T.L0044.X000.csproj" />
     <ProjectReference Include="..\..\..\R5T.L0043\source\R5T.L0043.O001\R5T.L0043.O001.csproj" />
     <ProjectReference Include="..\..\..\R5T.L0043\source\R5T.L0043.O002\R5T.L0043.O002.csproj" />
+    <ProjectReference Include="..\R5T.L0044.Z001\R5T.L0044.Z001.csproj" />
   </ItemGroup>
 </Project>

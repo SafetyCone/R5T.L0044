@@ -26,6 +26,19 @@ namespace R5T.L0044.O001
             return adjustedProjectName;
         }
 
+        public IExternalProjectName Get_ClientProjectName(
+            IExternalProjectName projectName)
+        {
+            var internalProjectName = projectName.As_InternalProjectName();
+
+            var clientProjectName = Instances.NameOperator.Append_Token(
+                internalProjectName,
+                Instances.ProjectNameTokens.Client)
+                .As_ExternalProjectName();
+
+            return clientProjectName;
+        }
+
         public IExternalProjectName Get_ConstructionProjectName(
             IExternalProjectName projectName)
         {
@@ -36,6 +49,19 @@ namespace R5T.L0044.O001
                 .As_ExternalProjectName();
 
             return constructionProjectName;
+        }
+
+        public IExternalProjectName Get_ServerProjectName(
+            IExternalProjectName projectName)
+        {
+            var internalProjectName = projectName.As_InternalProjectName();
+
+            var serverProjectName = Instances.NameOperator.Append_Token(
+                internalProjectName,
+                Instances.ProjectNameTokens.Server)
+                .As_ExternalProjectName();
+
+            return serverProjectName;
         }
     }
 }
