@@ -9,6 +9,14 @@ namespace R5T.L0044.S000.Library
     [ValuesMarker]
     public partial interface IOperations : IValuesMarker
     {
+        public string Get_ModifiedProjectNameMessage(
+            IProjectName projectName,
+            IProjectName modifiedProjectName)
+        {
+            var output = $"{modifiedProjectName}: modified from project name '{projectName}'.";
+            return output;
+        }
+
         public string Get_Adjust_ProjectNameForPrivacy_Message(
             IProjectName projectName,
             bool isPrivate,
@@ -46,6 +54,17 @@ namespace R5T.L0044.S000.Library
             var message = this.Get_ConstructionProjectName_Message(
                 projectName,
                 constructionProjectName);
+
+            Console.WriteLine(message);
+        }
+
+        public void Write_ModifiedProjectNames_ToConsole(
+            IProjectName projectName,
+            IProjectName modifiedProjectName)
+        {
+            var message = this.Get_ModifiedProjectNameMessage(
+                projectName,
+                modifiedProjectName);
 
             Console.WriteLine(message);
         }

@@ -35,5 +35,11 @@ namespace R5T.L0044.X000
             var output = externalProjectName.Value.ToProjectName();
             return output;
         }
+
+        public IProjectName As_InternalProjectName(IName name)
+        {
+            var output = name.Value.ToProjectName();
+            return output;
+        }
     }
 }

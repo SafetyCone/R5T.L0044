@@ -24,5 +24,10 @@ namespace R5T.L0044.X000
         {
             return Instances.ProjectNameTypeConverter.As_InternalProjectName(externalProjectName);
         }
+
+        public static IProjectName As_InternalProjectName(this IName name)
+        {
+            return Instances.ProjectNameTypeConverter.As_InternalProjectName(name);
+        }
     }
 }
